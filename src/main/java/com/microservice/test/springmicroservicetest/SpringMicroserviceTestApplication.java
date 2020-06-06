@@ -21,7 +21,8 @@ public class SpringMicroserviceTestApplication {
 	}
 	@GetMapping("/testService")
 	public String testService() {
-		return this.restTemplate.getForObject("http://localhost:9092/getServerInfo", String.class);
+		//return this.restTemplate.getForObject("http://localhost:9092/getServerInfo", String.class);
+		return "Hi Test";
 	}
 	 @Bean
 	 RestTemplate restTemplate(){
